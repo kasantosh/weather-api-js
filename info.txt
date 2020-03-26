@@ -1,0 +1,21 @@
+6c333f1db791bfaff201af4bfdf8c7da
+
+
+
+
+
+
+Here was my function to pull data from api.weatherstack.com - the current weather json response was nearly identical to the weather underground data, even including a url to a weather gif. Here's the code, just put your key, city, state, and units in the constructor like normal-
+
+
+
+async getWeather (city, state) {
+    const weatherResponse = await fetch(`http://api.weatherstack.com/current?access_key=${this.apiKey}&query=${city},${state}&units=${this.units}`);
+ 
+    const weatherData = await weatherResponse.json();
+ 
+    return weatherData;
+  }
+
+
+    7ec0c4375dc8261769d1a1dcc1e12a35
