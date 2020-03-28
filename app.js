@@ -5,7 +5,7 @@ const storage = new Storage();
 const weatherLocation = storage.getLocationData();
 
 // Init weather
-const weather = new Weather(weatherLocation.city, weatherLocation.state);
+const weather = new Weather(weatherLocation.city = 'Mississauga', weatherLocation.state = 'ON');
 
 // Init UI
 const ui = new UI();
